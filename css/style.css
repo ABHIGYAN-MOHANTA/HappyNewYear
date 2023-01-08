@@ -106,9 +106,9 @@ h3{
           color: beige;
           font-family: 'Bangers', sans-serif;
      }
-     #firstName, #lastName{
+     input#firstName, input#lastName{
           width: 20rem;
-          height: 4rem
+          height: 4rem;
      }
      
      section{
