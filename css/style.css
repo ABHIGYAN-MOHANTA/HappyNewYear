@@ -1,0 +1,147 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body{
+     font-size: 62.5%*3;
+     color: beige;
+    font-family: Montserrat;
+     background-image: url("https://i.pinimg.com/originals/9c/9c/95/9c9c9594083c7803650bca0f43f2b326.gif");
+     background-size: cover;
+}
+
+h1{
+     text-align: center;
+     font-size: 6rem;
+     color: beige;
+     font-family: 'Slackey', sans-serif;
+}
+
+p{
+     text-align: center;
+     font-size: 2rem;
+     color: beige;
+     font-family: 'Bangers', sans-serif;
+}
+#firstName, #lastName{
+     width: 50rem;
+     height: 4rem
+}
+
+section{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+#button{
+     width: 25rem;
+     height: 4rem;    
+}
+
+h2{
+     text-align: center;
+     font-size: 4rem;
+     color: beige;
+     font-family: 'Slackey', sans-serif;
+}
+
+h3{
+     text-align: center;
+     font-size: 3rem;
+     color: beige;
+     font-family: 'Slackey', sans-serif;
+}
+
+/* On mobile, please make all sections stack  */
+@media all and (max-width: 500px){
+     h1{
+          text-align: center;
+          font-size: 3rem;
+          color: beige;
+          font-family: 'Slackey', sans-serif;
+     }
+     
+     p{
+          text-align: center;
+          font-size: 2rem;
+          color: beige;
+          font-family: 'Bangers', sans-serif;
+     }
+     #firstName, #lastName{
+          width: 20rem;
+          height: 4rem
+     }
+     
+     section{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+     
+     #button{
+          width: 17rem;
+          height: 4rem;    
+     }
+     
+     h2{
+          text-align: center;
+          font-size: 3rem;
+          color: beige;
+          font-family: 'Slackey', sans-serif;
+     }
+     
+     h3{
+          text-align: center;
+          font-size: 2rem;
+          color: beige;
+          font-family: 'Slackey', sans-serif;
+          padding: 10 30px 0 10px;
+     }
+   }
+
+   /* On tablet, please make the sections in main stack  */
+@media all and (max-width: 920px){
+     #firstName, #lastName{
+          width: 40rem;
+          height: 4rem
+     }
+   }
